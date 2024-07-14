@@ -1,5 +1,9 @@
+import { Vista } from '@/components'
+
 export default function Home() {
   return (
-    <div>Hello World</div>
+    <main className='overflow-hidden'>
+      <Vista />
+    </main>
   )
 }

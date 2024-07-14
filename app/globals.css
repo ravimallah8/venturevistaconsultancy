@@ -1,25 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300,400,500,600,700,800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.vista {
+  @apply flex xl:flex-row flex-col gap-5
+  relative z-0 max-w-[1440px] mx-auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-  }
+.vista__title {
+  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.vista__subtitle {
+  @apply text-[27px] text-black-100 font-light mt-5;
 }

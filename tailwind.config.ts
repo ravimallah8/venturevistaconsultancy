@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+// import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
@@ -6,13 +6,15 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  mode: 'jit',
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        inter: ["Inter", "sans-serif"]
       },
+      colors: {
+        "black-100": "#2B2C35",
+      }
     },
   },
   plugins: [],
